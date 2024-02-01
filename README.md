@@ -15,27 +15,21 @@
 
 ### Setting Up the Project
 
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/your-username/BizCardX.git
-    ```
-
-2. **Install the required dependencies:**
+1. **Install the required dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Ensure a MySQL database is set up:**
-    - Update the `start_mysql()` function in the `main.py` file with your database details.
+2. **Ensure a MySQL database is set up:**
+    - Update the `start_mysql()` function in the `Bizcardx.py` file with your database details.
 
 ### Running the Application
 
 Execute the following command to run the Streamlit application:
 
 ```bash
-streamlit run main.py
+streamlit run Bizcardx.py
 ```
 
 ## Workflow Steps
@@ -57,7 +51,7 @@ streamlit run main.py
 
 ## Project Structure
 
-- **main.py**: Contains the main application code.
+- **Bizcardx.py**: Contains the main application code.
 - **uploaded_cards**: Directory to store uploaded business card images.
 
 ## Important Note
