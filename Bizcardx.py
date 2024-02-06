@@ -172,8 +172,8 @@ def main():
         
         st.subheader('Update the Details below:')
         
-        if selected_card_holder:
-            card_id = int(selected_card_holder[0])
+        if selected_card_holder is not None:
+            card_id = int(selected_card_holder.split(':')[0].strip())
             mysql_cursor.execute(f'select * from card_data where id = {card_id}')
             selected_card_data = mysql_cursor.fetchone()
 
@@ -223,7 +223,7 @@ def main():
 
                 if delete_confirmation:
                     if st.button('Delete Card Holder'):
-                        card_id_to_delete = int(selected_card_to_delete[0])
+                        card_id_to_delete = int(selected_card_holder.split(':')[0].strip())
                         query = f'delete from card_data where id = %s'
                         values = (card_id_to_delete,)
                         execute_query(mysql_cursor, mysql_connection, query,values)
