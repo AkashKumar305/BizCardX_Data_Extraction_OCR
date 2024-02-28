@@ -54,6 +54,10 @@ streamlit run Bizcardx.py
 - **Bizcardx.py**: Contains the main application code.
 - **uploaded_cards**: Directory to store uploaded business card images.
 
+## LinkedIn Profile
+Link: www.linkedin.com/in/akashkumarl
+Visit the link to see the project video
+
 ## Important Note
 
 Ensure that the necessary dependencies are installed, and the MySQL database is set up before running the application.
